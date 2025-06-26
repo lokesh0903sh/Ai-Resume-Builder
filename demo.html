@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Scrollable Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    body{
+      position: relative;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Scrollable Responsive Page</h1>
+
+    <!-- Repeat content to make it scrollable -->
+    <div class="section">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a sem vel odio accumsan lacinia.</p>
+    </div>
+    <div class="section">
+      <p>Curabitur nec sapien sit amet lorem tincidunt sagittis. Pellentesque habitant morbi tristique senectus et netus.</p>
+    </div>
+    <div class="section">
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat.</p>
+    </div>
+    <div class="section">
+      <p>Suspendisse potenti. Aenean vel velit euismod, dignissim sapien sit amet, fermentum nisl.</p>
+    </div>
+    <div class="section">
+      <p>Donec congue velit nec sapien elementum, nec faucibus sem facilisis. Morbi vitae nunc euismod, cursus risus ac, imperdiet magna.</p>
+    </div>
+    <div>
+        <iframe width="300" height="250" scrolling="no" style="border: 0px;" src="https://shivambaliyan11.github.io/dfp/so/tags/ibv.html" allowfullscreen></iframe>
+     </div>
+    <div class="section">
+      <p>Nam tempor semper risus, vitae varius lorem tristique a. Cras congue libero a finibus dignissim.</p>
+    </div>
+    <div class="section">
+      <p>Etiam mollis lorem in odio porta, nec bibendum justo rutrum. Suspendisse sit amet viverra nisi.</p>
+    </div>
+    <div class="section">
+      <p>Maecenas eget tortor eu ligula dictum malesuada. Nullam rutrum sem at mauris efficitur, at posuere neque egestas.</p>
+    </div>
+    <div class="section">
+      <p>Quisque bibendum risus at mauris rhoncus, et tincidunt justo varius. Morbi porttitor vel nulla id cursus.</p>
+    </div>
+    <div class="section">
+      <p>Phasellus accumsan, libero vitae rhoncus dictum, libero sem lacinia odio, sed varius diam ex id magna.</p>
+    </div>
+    <div class="section">
+      <p>Aliquam erat volutpat. Morbi vitae odio at leo condimentum ullamcorper sed et libero.</p>
+    </div>
+    <div class="section">
+      <p>In ut libero nec neque fermentum vulputate. Donec laoreet neque sit amet elit faucibus, id faucibus lacus vulputate.</p>
+    </div>
+    <div class="section">
+      <p>Fusce eu ligula nec risus mattis tempor a nec justo. Sed finibus ex eget orci feugiat, vitae mattis tellus cursus.</p>
+    </div>
+    <div class="section">
+      <p>Nunc posuere quam et fermentum convallis. Integer scelerisque eros vel orci gravida, id faucibus justo scelerisque.</p>
+    </div>
+  </div>
+            <script>
+             (function () {
+               const originalLog = console.log;
+               console.log = function (...args) {
+                 window.ReactNativeWebView?.postMessage?.(JSON.stringify(args));
+                 originalLog.apply(console, args);
+               };
+             })();
+            </script>
+           <!-- <script src="${tagUrl}">
+           </script> -->
+</body>
+</html>
